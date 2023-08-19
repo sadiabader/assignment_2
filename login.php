@@ -21,7 +21,7 @@ include('connection.php');
     <input type="email" name="email" class="form-control">
     <label for="name"> Password </label>
     <input type="password" name="password" class="form-control">
-    <input type="submit" name="login"  class="btn btn-primary">
+    <input type="submit" name="login" value="login" class="btn btn-primary">
 
 </form> 
 
@@ -48,11 +48,11 @@ if(isset($_POST['login'])){
 }
 
 // if(isset($_POST['login'])){
-//     $name = $_POST['name'];
 //     $email = $_POST['email'];
 //     $password = $_POST['password'];
 
-//     $query = "INSERT INTO `user-data` (`name`, `email`, `password`) VALUES ('$name', '$email', '$password')";
+//     $query = "INSERT INTO `user-data` (, `email`, `password`) VALUES 
+// ('$email', '$password')";
 
 //     $result = mysqli_query($connection, $query);
 //     if(!$result){
