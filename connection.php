@@ -1,8 +1,8 @@
 <?php
 
-$connections = mysqli_connect("localhost", "root", "", "user_data");
+$connect = mysqli_connect("localhost", "root", "", "user_data");
 
-if($connections){
+if($connect){
     echo "connected";
 }
 else{
