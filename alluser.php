@@ -6,11 +6,8 @@ include('connection.php');
 
 $sql = "select * from `users`";
 $fetch = mysqli_query($connect, $sql);
-//print_r($data);
-//print_r($data['id']);
-//print_r($data['name']);
-//print_r($data['age']);
-//print_r($data['gender']);
+
+
 
 ?>
 <!DOCTYPE html>
