@@ -29,12 +29,12 @@ include('header.php');
 <input type="email" name="email" class="form-control">
 <label for="password"> Password</label>
 <input type="passwprd" name="password" class="form-control">
-<input type="submit" name="Login"value="login" class="btn btn-success">
+<input type="submit" name="submit"value="submit" class="btn btn-success">
 
 </form>
 <?php
 
-if(isset($_POST['Login'])){
+if(isset($_POST['submit'])){
     $name = $_POST['name'];
     $gender = $_POST['gender'];
     $email = $_POST['email'];

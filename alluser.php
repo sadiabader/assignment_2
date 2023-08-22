@@ -34,8 +34,6 @@ $fetch = mysqli_query($connect, $sql);
 <th>Gender</th>
 <th>Email</th>
 <th>Password</th>
-<th>Update</t>
-<th>Delete</th>
 
     </tr>
 </thead>
@@ -48,8 +46,6 @@ while($data = mysqli_fetch_assoc($fetch)){
 <td><?php echo $data['gender']; ?></td>
 <td><?php echo $data['email']; ?></td>
 <td><?php echo $data['password']; ?></td>
-<td> <a href="update.php?id=<?php echo $data['id'];?>"class="btn btn-warning"> update </a></td>
-<td> <a href="delete.php?id=<?php echo $data['id'];?>"class="btn btn-warning"> delete </a></td>
     </tr>
     <?php
 }

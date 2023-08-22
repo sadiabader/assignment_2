@@ -14,8 +14,12 @@ $res = mysqli_query($connect, $query);
 if(mysqli_num_rows($res) > 0){
     while($row = mysqli_fetch_assoc($res)){
         session_start();
-        $_SESSION['username'] = $row['name'];
-        header('location:http://localhost/assignment_2/index.php');
+        $_SESSION['name'] = $row['name'];
+        $_SESSION['gender'] = $row['gender'];
+        $_SESSION['email'] = $row['email'];
+        $_SESSION['password'] = $row['password'];
+         echo $_SESSION['name'];
+        header('location:http://localhost/assignment_2/alluser.php');
     }
 }
 else{
@@ -43,7 +47,7 @@ else{
     <input type="email" name="email" class="form-control">
     <label for="name"> Password </label>
     <input type="password" name="password" class="form-control">
-    <input type="submit" name="login" value="login" class="btn btn-primary">
+    <input type="submit" name="login" class="btn btn-primary">
 
 </form> 
 </div>
